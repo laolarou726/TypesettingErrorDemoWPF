@@ -1,0 +1,39 @@
+﻿<Window x:Class="TypesettingErrorDemoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="250">
+    <StackPanel>
+        <TextBlock
+            Text="The quick brown fox jumps over the lazy dog"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text="一二三 The quick brown 一二三 fox jumps over the lazy dog"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Foreground="Red"
+            Text="一二三四 TEXT 一二三四五六七八九十零"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Text="TEXT 一二 TEXT 三四 TEXT 一二三四五六七八九十零"
+            TextWrapping="Wrap"/>
+        <Grid Background="Gray"
+              Width="150"
+              Height="150">
+            <TextBlock
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="&#xEB5A;"
+                FontSize="140"
+                FontFamily="/Assets/SegoeIcons.ttf#Segoe Fluent Icons"/>
+            <TextBlock
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Text="&#xEB5B;"
+                FontSize="140"
+                FontFamily="/Assets/SegoeIcons.ttf#Segoe Fluent Icons"/>
+        </Grid>
+    </StackPanel>
+</Window>
